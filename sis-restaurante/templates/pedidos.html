@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Pedidos</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="contenido">
+
+    <h1>🛒 Gestión de Pedidos</h1>
+
+    <a href="/dashboard" class="btn">← Volver</a>
+    <a href="/agregar_pedido" class="boton-agregar">➕ Nuevo Pedido</a>
+
+    <table>
+
+        <tr>
+            <th>ID</th>
+            <th>Cliente</th>
+            <th>Mesa</th>
+            <th>Total</th>
+            <th>Estado</th>
+            <th>Acciones</th>
+        </tr>
+
+        <tr>
+            <td>001</td>
+            <td>Carlos Pérez</td>
+            <td>4</td>
+            <td>120 Bs</td>
+            <td>Pendiente</td>
+            <td>
+                <a href="#" class="btn-editar">✏ Editar</a>
+                <a href="#" class="btn-eliminar">🗑 Eliminar</a>
+            </td>
+        </tr>
+
+    </table>
+
+</div>
+</body>
+</html>

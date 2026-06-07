@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Gestión de Platos</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="contenido">
+
+    <h1>🍔 Gestión de Platos</h1>
+
+    <a href="/dashboard" class="btn">← Volver</a>
+    <a href="/agregar_plato" class="boton-agregar">➕ Añadir Plato</a>
+
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Plato</th>
+            <th>Categoría</th>
+            <th>Precio</th>
+            <th>Acciones</th>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>Hamburguesa Especial</td>
+            <td>Comida Rápida</td>
+            <td>25 Bs</td>
+            <td>
+                <a href="#" class="btn-editar">✏ Editar</a>
+                <a href="#" class="btn-eliminar">🗑 Eliminar</a>
+            </td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>Pizza Familiar</td>
+            <td>Pizzas</td>
+            <td>80 Bs</td>
+            <td>
+                <a href="#" class="btn-editar">✏ Editar</a>
+                <a href="#" class="btn-eliminar">🗑 Eliminar</a>
+            </td>
+        </tr>
+
+    </table>
+
+</div>
+
+</body>
+</html>

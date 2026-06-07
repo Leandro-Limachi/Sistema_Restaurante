@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mesas</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="contenido">
+
+    <h1>🪑 Administración de Mesas</h1>
+
+    <a href="/dashboard" class="btn">← Volver</a>
+    <a href="/agregar_mesa" class="boton-agregar">➕ Añadir Mesa</a>
+
+    <table>
+
+        <tr>
+            <th>ID</th>
+            <th>Número</th>
+            <th>Capacidad</th>
+            <th>Estado</th>
+            <th>Acciones</th>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>Mesa 1</td>
+            <td>4 Personas</td>
+            <td>Libre</td>
+            <td>
+                <a href="#" class="btn-editar">✏ Editar</a>
+                <a href="#" class="btn-eliminar">🗑 Eliminar</a>
+            </td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>Mesa 2</td>
+            <td>6 Personas</td>
+            <td>Ocupada</td>
+            <td>
+                <a href="#" class="btn-editar">✏ Editar</a>
+                <a href="#" class="btn-eliminar">🗑 Eliminar</a>
+            </td>
+        </tr>
+
+    </table>
+
+</div>
+</body>
+</html>
